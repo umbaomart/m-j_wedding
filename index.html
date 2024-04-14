@@ -1,13 +1,157 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/style.scss">
+  <title>Vite + TS</title>
+</head>
+
+<body>
+  <header class="siteHeader">
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#" class="menu__link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Our Story</a>
+        </li>
+        <li class="menu__item menu__item--logo">
+          <a href="#" class="menu__link">
+            <img src="./src/images/logo.svg" alt="">
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Venue</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="siteContent" id="siteContent" role="main">
+    <section class="sec hero">
+      <div class="wedding__content">
+        <div class="wedding__data">
+          <figure class="wedding__flower">
+            <img src="./src/images/flower.png" alt="">
+          </figure>
+          <p class="wedding__date">04 . 18 . 2024</p>
+          <h1 class="wedding__ttl">
+            Mart <br>
+            &amp; <br>
+            Jingky
+          </h1>
+          <p class="wedding__text">
+            <span class="wedding__ring">
+              <img src="./src/images/wedding-ring.png" alt=" ">
+            </span>
+            Wedding
+          </p>
+        </div>
+      </div>
+      <figure class="wedding_kv">
+        <img src="./src/images/bg-01.jpg" alt="">
+      </figure>
+    </section>
+    <section class="sec sec02">
+      <div class="story">
+        <h2 class="sec__ttl">Our Story</h2>
+        <div class="story__flex">
+          <figure class="story__cover">
+            <img src="./src/images/bg-02.jpg" alt="">
+          </figure>
+          <div class="story__content">
+            <p class="story__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quos delectus doloremque, praesentium
+              placeat quae nulla suscipit ab inventore fuga, corporis quibusdam eum, explicabo quod sunt? Libero magnam
+              sequi sunt.
+              <br>
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quos delectus doloremque, praesentium
+              placeat quae nulla suscipit ab inventore fuga, corporis quibusdam eum, explicabo quod sunt? Libero magnam
+              sequi sunt.
+              <br>
+              <br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quos delectus doloremque, praesentium
+              placeat quae nulla suscipit ab inventore fuga, corporis quibusdam eum, explicabo quod sunt? Libero magnam
+              sequi sunt.
+            </p>
+            <div class="wrapper flex-start">
+              <a href="#" class="btn btn--primary">
+                read more
+                <span class="btn__icon">
+                  <img src="./src/images/icon-arrow.svg" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec se03">
+      <h2 class="sec__ttl">Team Groom</h2>
+      <!-- Slider Groom Slider Main -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <figure class="slide__header">
+              <img src="./src/images/team/prof-arvic.jpg" alt="">
+            </figure>
+            <div class="slide__footer">
+              <h3 class="slide__name">Arvic Babol</h3>
+              <p class="slide__caption">Bestman</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <figure class="slide__header">
+              <img src="./src/images/team/prof-bryan.jpg" alt="">
+            </figure>
+            <div class="slide__footer">
+              <h3 class="slide__name">Bryan Balatong</h3>
+              <p class="slide__caption">Candle</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <figure class="slide__header">
+              <img src="./src/images/team/prof-junnel.jpg" alt="">
+            </figure>
+            <div class="slide__footer">
+              <h3 class="slide__name">Junnel Innosanto</h3>
+              <p class="slide__caption">Veil</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <figure class="slide__header">
+              <img src="./src/images/team/prof-flor.jpg" alt="">
+            </figure>
+            <div class="slide__footer">
+              <h3 class="slide__name">Florencio Bagayawa</h3>
+              <p class="slide__caption">Cord</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <figure class="slide__header">
+              <img src="./src/images/team/prof-raymund.jpg" alt="">
+            </figure>
+            <div class="slide__footer">
+              <h3 class="slide__name">Raymund Umbao</h3>
+              <p class="slide__caption">Ribbon</p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- / End Slider Groom -->
+
+    </section>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

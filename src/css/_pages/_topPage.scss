@@ -1,0 +1,183 @@
+/*====================================================================
+topPageFvSec
+====================================================================*/
+.siteContent {
+    width: 100%;
+}
+
+.sec {
+    &.hero {
+        @include u-flex($fd: row, $fw: nowrap, $jc: flex-end, $ai: stretch);
+        position: relative;
+    }
+}
+
+.wedding__content {
+    top: 50%;
+    left: 10%;
+    z-index: 2;
+    width: 40%;
+    position: absolute;
+    padding-top: 3.2rem;
+    transform: translateY(-50%);
+
+    @include u-mqMax(1300px) {
+        left: 5%;
+    }
+}
+
+.wedding__data {
+    max-width: 54rem;
+}
+
+.wedding__flower {
+    width: 33.2rem;
+    margin: 0 auto;
+}
+
+.wedding__date {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
+.wedding__ttl {
+    text-align: center;
+    color: $darkGreen;
+    text-align: center;
+    font-family: $CenzilDeco;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.wedding__text {
+    text-align: center;
+    text-shadow: 0px 0px 9.243px rgba(0, 0, 0, 0.25);
+    font-family: Cinzel;
+    font-size: 10rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: .2rem;
+    background: linear-gradient(180deg, #BB8C56 28.66%, #DFCA84 87.8%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wedding__ring {
+    display: block;
+    width: 12.3rem;
+    margin: 0 auto;
+    line-height: 0;
+    margin-bottom: -6rem;
+}
+
+.wedding_kv {
+    width: 81.11%;
+    position: relative;
+    z-index: 1;
+}
+
+// Sec02
+.sec__ttl {
+    color: $black;
+    left: 16%;
+    -webkit-text-stroke-width: 2;
+    -webkit-text-stroke-color: $white;
+    font-family: $CenzilDeco;
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: .02em;
+    position: relative;
+    z-index: 2;
+
+    .sec02 & {
+        margin-bottom: -3rem;
+    }
+}
+
+.story {
+    width: 100%;
+    max-width: 124rem;
+    padding: 10rem 2rem;
+    margin: 0 auto;
+}
+
+.story__flex {
+    @include u-flex($fd: row, $fw: nowrap, $jc: space-between, $ai: center);
+
+}
+
+.story__cover {
+    width: 40%;
+}
+
+.story__content {
+    width: 55%;
+}
+
+.story__text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-family: $Montaga;
+}
+
+.wrapper {
+    margin-top: 6rem;
+
+    &.flex-start {
+        @include u-flex($fd: row, $fw: nowrap, $jc: flex-start, $ai: center);
+    }
+}
+
+.btn {
+    color: $white;
+    font-family: $Outfit;
+    font-size: 17.647px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 1.7rem 0;
+    border: 2px solid $white;
+    background: $green;
+    padding: 1.6rem 7.5rem 1.6rem 2.4rem;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 1.2rem;
+        top: 1.2rem;
+        border-radius: 1.7rem 0;
+        background: $black;
+        z-index: -1 ;
+    }
+}
+
+.btn__icon {
+    display: inline-block;
+    position: absolute;
+    right: .4rem;
+    height: calc(100% - .8rem);
+    top: 50%;
+    width: 5.2rem;
+    border-radius: 1.7rem 0px;
+    transform: translateY(-50%);
+    background: #1A281F;
+    width: 5.2rem;
+    padding: 0 1.2rem;
+    @include u-flex($fd: row, $fw: nowrap, $jc: center, $ai: center);
+
+    img {
+        width: 100%;
+    }
+}

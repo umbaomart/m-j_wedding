@@ -1,0 +1,39 @@
+/*====================================================================
+siteHeader
+====================================================================*/
+.siteHeader {}
+
+.menu {
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  padding: 1rem 2rem;
+}
+
+.menu__list {
+  @include u-flex($fd: row, $fw: nowrap, $jc: space-between, $ai: center);
+  width: 100%;
+  max-width: 61%;
+  margin: 0 auto;
+  max-width: 87.6rem;
+}
+
+.menu__item {
+
+  &--logo {
+    width: 6rem;
+  }
+}
+
+.menu__link {
+  display: block;
+  font-size: 1.6rem;
+  color: $black;
+  font-family: $CenzilDeco;
+  font-weight: 700;
+
+  img {
+    width: 100%;
+  }
+}
