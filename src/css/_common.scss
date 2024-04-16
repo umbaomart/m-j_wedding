@@ -16,14 +16,8 @@ html {
 }
 
 body {
-  min-width: $contentCenter;
   @include fontFeature;
-
-
-
-  @include u-mqMax {
-    min-width: inherit;
-  }
+  overflow-x: hidden;
 }
 
 

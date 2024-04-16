@@ -1,0 +1,120 @@
+.inner__container {
+    width: 100%;
+    max-width: 124rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    @include u-flex($fd: row, $fw: nowrap, $jc: space-between, $ai: stretch);
+
+    &.withBrides {
+        flex-direction: row-reverse;
+        margin-top: 10rem;
+    }
+}
+
+.swiper-Main {
+    width: 41.67%;
+}
+
+.swiper-thumb {
+    width: 55%;
+}
+
+.swiper-bridesThumb,
+.swiper-groomsThumb {
+    width: 100%;
+
+    .swiper-wrapper {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .swiper-slide {
+        opacity: .4;
+    }
+
+    .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+}
+
+.swiper-bridesThumb {
+
+    .swiper-wrapper {
+        justify-content: flex-end;
+    }
+}
+
+.swiper-slide {
+    z-index: 1;
+}
+
+.slide__header {
+
+    .swiper-Main & {
+        position: relative;
+        padding: 1rem;
+
+        &:before {
+            content: '';
+            width: calc(100% - 2rem);
+            height: calc(100% - 2rem);
+            position: absolute;
+            left: 2.2rem;
+            top: 2rem;
+            background: $lightGreen;
+            z-index: -1;
+        }
+    }
+
+}
+
+.slide__footer {
+    padding: 2rem 1rem;
+}
+
+.slide__name,
+.slide__caption {
+    color: $black;
+    text-align: center;
+    font-family: $Cenzil;
+    font-weight: 700;
+}
+
+.slide__name {
+    font-size: 3.2rem;
+}
+
+.slide__caption {
+    margin-top: 1rem;
+    font-size: 2.8rem;
+}
+
+// Sec04 Swiper
+.flex__right {
+    position: relative;
+
+    .swiper {
+        // overflow: visible;
+    }
+
+    // .swiper-invitations {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: $white;
+
+            &:after {
+                font-size: 2.4rem;
+                color: #ddd;
+            }
+        }
+
+        .swiper-button-prev {
+            left: -2.4rem;
+        }
+
+        .swiper-button-next {
+            right: -2.4rem;
+        }
+    // }
+}

@@ -10,6 +10,15 @@ topPageFvSec
         @include u-flex($fd: row, $fw: nowrap, $jc: flex-end, $ai: stretch);
         position: relative;
     }
+
+    &.se03 {
+        padding: 10rem 2rem;
+        background: #fbfff7;
+    }
+
+    &.sec04 {
+        background: url('../images/bg-03.jpg') no-repeat center / cover;
+    }
 }
 
 .wedding__content {
@@ -85,7 +94,6 @@ topPageFvSec
 // Sec02
 .sec__ttl {
     color: $black;
-    left: 16%;
     -webkit-text-stroke-width: 2;
     -webkit-text-stroke-color: $white;
     font-family: $CenzilDeco;
@@ -98,7 +106,23 @@ topPageFvSec
     z-index: 2;
 
     .sec02 & {
+        left: 16%;
         margin-bottom: -3rem;
+    }
+
+    &.text-right {
+        text-align: right;
+    }
+
+    .sec__ttl--up {
+        color: $white;
+        display: block;
+        text-align: center;
+        font-family: $CenzilDeco;
+
+        &:last-child {
+            margin-left: 20rem;
+        }
     }
 }
 
@@ -159,7 +183,7 @@ topPageFvSec
         top: 1.2rem;
         border-radius: 1.7rem 0;
         background: $black;
-        z-index: -1 ;
+        z-index: -1;
     }
 }
 
@@ -179,5 +203,89 @@ topPageFvSec
 
     img {
         width: 100%;
+    }
+}
+
+// Sec04
+.sec04__inner {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 10rem 0;
+}
+
+.flex__details {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 10rem 2rem 0;
+    @include u-flex($fd: row, $fw: nowrap, $jc: space-between, $ai: center);
+}
+
+.flex__left {
+    width: 60%;
+}
+
+.flex__right {
+    width: 40%;
+}
+
+.item__details {
+    @include u-flex($fd: row, $fw: nowrap, $jc: flex-start, $ai: center);
+    gap: 3.6rem;
+
+    &:not(:first-child) {
+        margin-top: 2.8rem;
+    }
+}
+
+.item__detailsImg {
+    width: 14rem;
+}
+
+.item__detailsData {
+    flex: 1;
+}
+
+.item__detailsTtl {
+    color: $white;
+    font-family: $Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+
+    @include u-flex($fd: row, $fw: nowrap, $jc: flex-start, $ai: center);
+}
+
+.theme__pallete {
+    margin-left: 1.2rem;
+    width: 13.5rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+.item__detailsCaption {
+    margin-top: 1.2rem;
+    color: #FFF;
+    font-family: $Poppins;
+    font-size: 2rem;
+    letter-spacing: 0.4px;
+}
+
+// Sec05
+.gallery {
+    padding: 1rem 0;
+
+    .swiper-wrapper {
+        // transition: all ease-in-out;
+        // transition-duration: 5000ms;
+        transition-timing-function : linear !important;
+    }
+
+    .gallery__slider-reverse {
+        padding: 1rem 0;
     }
 }
