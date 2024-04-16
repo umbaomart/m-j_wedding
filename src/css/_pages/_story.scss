@@ -1,0 +1,51 @@
+.story__kv {
+    width: 100%;
+    height: 40rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.story__inner {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+
+    @include u-mqMax {
+        padding: 4rem 1.5rem;
+    }
+}
+
+.story__ttl {
+    font-size: 7rem;
+    font-family: $CenzilDeco;
+    font-weight: 700;
+    text-align: center;
+
+    @include u-mqMax {
+        font-size: 4rem;
+    }
+}
+
+.story__innerContent {
+    width: 100%;
+    margin-top: 4rem;
+
+    @include u-mqMax {
+        margin-top: 2rem;
+    }
+}
+
+.story__text {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-family: $Montaga;
+
+    @include u-mqMax {
+        font-size: 1.6rem;
+    }
+}
