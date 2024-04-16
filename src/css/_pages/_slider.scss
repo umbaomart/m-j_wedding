@@ -5,18 +5,36 @@
     padding: 0 2rem;
     @include u-flex($fd: row, $fw: nowrap, $jc: space-between, $ai: stretch);
 
+    @include u-mqMax {
+        padding: 0 1.5rem;
+        display: block;
+    }
+
     &.withBrides {
         flex-direction: row-reverse;
         margin-top: 10rem;
+
+        @include u-mqMax {
+            margin-top: 4rem;
+        }
     }
 }
 
 .swiper-Main {
     width: 41.67%;
+
+    @include u-mqMax {
+        width: 100%;
+    }
 }
 
 .swiper-thumb {
     width: 55%;
+
+
+    @include u-mqMax {
+        width: 100%;
+    }
 }
 
 .swiper-bridesThumb,
@@ -26,6 +44,10 @@
     .swiper-wrapper {
         flex-wrap: wrap;
         gap: 1rem;
+
+        @include u-mqMax {
+            // gap: .5rem;
+        }
     }
 
     .swiper-slide {
@@ -41,6 +63,10 @@
 
     .swiper-wrapper {
         justify-content: flex-end;
+
+        @include u-mqMax {
+            justify-content: flex-start;
+        }
     }
 }
 
@@ -70,6 +96,10 @@
 
 .slide__footer {
     padding: 2rem 1rem;
+
+    @include u-mqMax {
+        padding: 1rem;
+    }
 }
 
 .slide__name,
@@ -82,16 +112,29 @@
 
 .slide__name {
     font-size: 3.2rem;
+
+    @include u-mqMax {
+        font-size: 2.2rem;
+    }
 }
 
 .slide__caption {
     margin-top: 1rem;
     font-size: 2.8rem;
+
+    @include u-mqMax {
+        font-size: 1.8rem;
+    }
 }
 
 // Sec04 Swiper
 .flex__right {
     position: relative;
+
+    @include u-mqMax {
+        width: 85%;
+        margin: 4rem auto 0;
+    }
 
     .swiper {
         // overflow: visible;

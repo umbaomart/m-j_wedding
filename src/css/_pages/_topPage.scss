@@ -9,11 +9,22 @@ topPageFvSec
     &.hero {
         @include u-flex($fd: row, $fw: nowrap, $jc: flex-end, $ai: stretch);
         position: relative;
+
+
+        @include u-mqMax {
+            display: block;
+            background: url(../images/bg-01.jpg) no-repeat center / cover;
+            background-position-x: 100%;
+        }
     }
 
     &.se03 {
         padding: 10rem 2rem;
         background: #fbfff7;
+
+        @include u-mqMax {
+            padding: 4rem 1.5rem;
+        }
     }
 
     &.sec04 {
@@ -33,21 +44,44 @@ topPageFvSec
     @include u-mqMax(1300px) {
         left: 5%;
     }
+
+    @include u-mqMax {
+        width: 100%;
+        position: static;
+        transform: unset;
+        position: relative;
+        padding-bottom: 2rem;
+        left: 0;
+        background: rgba(255, 255, 255, 0.25);
+    }
 }
 
 .wedding__data {
     max-width: 54rem;
+
+    @include u-mqMax {
+        max-width: 100%;
+    }
 }
 
 .wedding__flower {
     width: 33.2rem;
     margin: 0 auto;
+
+    @include u-mqMax {
+        width: 20rem;
+    }
 }
 
 .wedding__date {
     font-size: 2.4rem;
     text-align: center;
     margin-bottom: .8rem;
+
+    @include u-mqMax {
+        font-size: 1.6rem;
+        margin-bottom: .4rem;
+    }
 }
 
 .wedding__ttl {
@@ -60,6 +94,10 @@ topPageFvSec
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 2rem;
+
+    @include u-mqMax {
+        font-size: 4rem;
+    }
 }
 
 .wedding__text {
@@ -75,6 +113,10 @@ topPageFvSec
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include u-mqMax {
+        font-size: 5rem;
+    }
 }
 
 .wedding__ring {
@@ -83,12 +125,21 @@ topPageFvSec
     margin: 0 auto;
     line-height: 0;
     margin-bottom: -6rem;
+
+    @include u-mqMax {
+        width: 8rem;
+        margin-bottom: -3rem;
+    }
 }
 
 .wedding_kv {
     width: 81.11%;
     position: relative;
     z-index: 1;
+
+    @include u-mqMax {
+        display: none;
+    }
 }
 
 // Sec02
@@ -108,6 +159,13 @@ topPageFvSec
     .sec02 & {
         left: 16%;
         margin-bottom: -3rem;
+
+        @include u-mqMax {
+            left: 0;
+            margin-bottom: 0;
+            font-size: 2.8rem;
+            text-align: center;
+        }
     }
 
     &.text-right {
@@ -120,8 +178,23 @@ topPageFvSec
         text-align: center;
         font-family: $CenzilDeco;
 
+        @include u-mqMax {
+            font-size: 2.8rem;
+        }
+
         &:last-child {
             margin-left: 20rem;
+
+            @include u-mqMax {
+                margin-left: 10rem;
+            }
+        }
+    }
+
+    .se03 & {
+        @include u-mqMax {
+            font-size: 2.8rem;
+            text-align: center;
         }
     }
 }
@@ -131,39 +204,68 @@ topPageFvSec
     max-width: 124rem;
     padding: 10rem 2rem;
     margin: 0 auto;
+
+    @include u-mqMax {
+        padding: 5rem 1.5rem;
+    }
 }
 
 .story__flex {
     @include u-flex($fd: row, $fw: nowrap, $jc: space-between, $ai: center);
 
+    @include u-mqMax {
+        display: block;
+    }
 }
 
 .story__cover {
     width: 40%;
+
+    @include u-mqMax {
+        width: 100%;
+        margin-top: 2rem;
+    }
 }
 
 .story__content {
     width: 55%;
+
+    @include u-mqMax {
+        width: 100%;
+        margin-top: 2rem;
+    }
 }
 
 .story__text {
     font-size: 1.8rem;
     line-height: 1.6;
     font-family: $Montaga;
+
+    @include u-mqMax {
+        font-size: 1.6rem;
+    }
 }
 
 .wrapper {
     margin-top: 6rem;
 
+    @include u-mqMax {
+        margin-top: 4rem;
+    }
+
     &.flex-start {
         @include u-flex($fd: row, $fw: nowrap, $jc: flex-start, $ai: center);
+
+        @include u-mqMax {
+            justify-content: center;
+        }
     }
 }
 
 .btn {
     color: $white;
     font-family: $Outfit;
-    font-size: 17.647px;
+    font-size: 1.7rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -173,6 +275,10 @@ topPageFvSec
     background: $green;
     padding: 1.6rem 7.5rem 1.6rem 2.4rem;
     position: relative;
+
+    @include u-mqMax {
+        padding: 1rem 5rem 1rem 1.8rem;
+    }
 
     &:before {
         content: '';
@@ -184,6 +290,11 @@ topPageFvSec
         border-radius: 1.7rem 0;
         background: $black;
         z-index: -1;
+
+        @include u-mqMax {
+            left: 1rem;
+            top: 1rem;
+        }
     }
 }
 
@@ -201,6 +312,10 @@ topPageFvSec
     padding: 0 1.2rem;
     @include u-flex($fd: row, $fw: nowrap, $jc: center, $ai: center);
 
+    @include u-mqMax {
+        width: 3.6rem;
+    }
+
     img {
         width: 100%;
     }
@@ -210,6 +325,10 @@ topPageFvSec
 .sec04__inner {
     background: rgba(0, 0, 0, 0.25);
     padding: 10rem 0;
+
+    @include u-mqMax {
+        padding: 5rem 0;
+    }
 }
 
 .flex__details {
@@ -218,19 +337,36 @@ topPageFvSec
     max-width: 120rem;
     padding: 10rem 2rem 0;
     @include u-flex($fd: row, $fw: nowrap, $jc: space-between, $ai: center);
+
+    @include u-mqMax {
+        display: block;
+        padding: 5rem 1.5rem 0;
+    }
 }
 
 .flex__left {
     width: 60%;
+
+    @include u-mqMax {
+        width: 100%;
+    }
 }
 
 .flex__right {
     width: 40%;
+
+    @include u-mqMax {
+        width: 100%;
+    }
 }
 
 .item__details {
     @include u-flex($fd: row, $fw: nowrap, $jc: flex-start, $ai: center);
     gap: 3.6rem;
+
+    @include u-mqMax {
+        gap: 2rem;
+    }
 
     &:not(:first-child) {
         margin-top: 2.8rem;
@@ -239,6 +375,10 @@ topPageFvSec
 
 .item__detailsImg {
     width: 14rem;
+
+    @include u-mqMax {
+        width: 8rem;
+    }
 }
 
 .item__detailsData {
@@ -256,11 +396,19 @@ topPageFvSec
     text-transform: uppercase;
 
     @include u-flex($fd: row, $fw: nowrap, $jc: flex-start, $ai: center);
+
+    @include u-mqMax {
+        font-size: 1.8rem;
+    }
 }
 
 .theme__pallete {
     margin-left: 1.2rem;
     width: 13.5rem;
+
+    @include u-mqMax {
+        width: 8rem;
+    }
 
     img {
         width: 100%;
@@ -272,7 +420,13 @@ topPageFvSec
     color: #FFF;
     font-family: $Poppins;
     font-size: 2rem;
+    line-height: 1.2;
     letter-spacing: 0.4px;
+
+    @include u-mqMax {
+        font-size: 1.6rem;
+        margin-top: .8rem;
+    }
 }
 
 // Sec05
@@ -282,10 +436,43 @@ topPageFvSec
     .swiper-wrapper {
         // transition: all ease-in-out;
         // transition-duration: 5000ms;
-        transition-timing-function : linear !important;
+        transition-timing-function: linear !important;
     }
 
     .gallery__slider-reverse {
         padding: 1rem 0;
+    }
+}
+
+.sec07__kv {
+    position: relative;
+}
+
+.footer {
+    min-height: 10rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    @include u-flex($fd: row, $fw: nowrap, $jc: center, $ai: center);
+    color: $white;
+    font-size: 1.4rem;
+    font-family: $Poppins;
+    z-index: 1;
+
+    @include u-mqMax {
+        font-size: 1.2rem;
+        min-height: 7rem;
+    }
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.50);
+        filter: blur(15px);
+        z-index: -1;
     }
 }
